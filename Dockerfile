@@ -1,4 +1,4 @@
-FROM johannesflake/polybases:cf71e751
+FROM johannesflake/polybases:v1
 
 MAINTAINER Johannes Flake <flake@art.rwth-aachen.de>
 
