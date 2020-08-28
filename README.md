@@ -3,7 +3,7 @@
 
 ## Set-up
 
-In a terminal with both `git` and `docker` available:
+In a terminal with `git` available:
 ```
 git clone https://github.com/johannesflake/polybases-examples.git
 ```
