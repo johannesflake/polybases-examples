@@ -13,7 +13,7 @@ will create a directory `polybases-examples` containing the examples.
 
 In a terminal with both `git` and `docker` available:
 ```
-cd polybases-example
+cd polybases-examples
 git pull
 ./run.sh
 ```
