@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: johannesflake/oscar
+      options: -v $(pwd):/home/oscar/local -w /home/oscar/local
       
     steps:
       - name: do test
