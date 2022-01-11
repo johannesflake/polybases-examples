@@ -13,10 +13,13 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
+        with:
+          path: /home/oscar/
       - name: do test
         run: |
           echo Hello, world!
           julia -v
+          cd /home/oscar
           pwd
           ls
       
