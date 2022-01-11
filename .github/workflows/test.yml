@@ -16,6 +16,5 @@ jobs:
           echo Hello, world!
           julia -v
           pwd
-          ls /github/home/
-          ls /__w/
+          ls
       
