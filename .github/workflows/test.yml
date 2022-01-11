@@ -21,5 +21,5 @@ jobs:
           julia -v
           pwd
           ls
-          sudo -c "julia tests.jl" -m oscar
+          su -c "julia tests.jl" -m oscar
       
