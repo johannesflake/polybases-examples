@@ -22,4 +22,5 @@ jobs:
           cd /home/oscar
           pwd
           ls
+          julia tests.jl
       
