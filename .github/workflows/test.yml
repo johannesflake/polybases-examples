@@ -1,0 +1,19 @@
+name: test
+
+on:
+#  push: #
+  workflow_dispatch: #
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container:
+      image: johannesflake/oscar
+      
+    steps:
+      - name: do test
+        run: |
+          echo Hello, world!
+          julia -v
+          ls
+      
