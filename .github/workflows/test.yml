@@ -18,9 +18,8 @@ jobs:
       - name: do test
         run: |
           echo Hello, world!
-          su - oscar
           julia -v
           pwd
           ls
-          julia tests.jl
+          sudo -c "julia tests.jl" -m oscar
       
