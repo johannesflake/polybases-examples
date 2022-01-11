@@ -2,7 +2,7 @@ name: test
 
 on:
 #  push: #
-  workflow_dispatch: #
+  workflow_dispatch: # (manually)
 
 jobs:
   test:
@@ -17,6 +17,9 @@ jobs:
           echo Hello, world!
           julia -v
           pwd
+          ls
+          ls /github/home/
+          ls /__w/
           cd /home/oscar/local
           ls
       
