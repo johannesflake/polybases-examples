@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: johannesflake/oscar
-      options: -v $(pwd):/home/oscar/local -w /home/oscar/local
       
     steps:
       - name: do test
@@ -17,9 +16,6 @@ jobs:
           echo Hello, world!
           julia -v
           pwd
-          ls
           ls /github/home/
           ls /__w/
-          cd /home/oscar/local
-          ls
       
