@@ -1,7 +1,11 @@
 name: test
 
 on:
-#  push: #
+  schedule:
+    - cron: '0 2 2 * *' # once a month
+  push:
+    paths:
+      - '**.ipynb'
   workflow_dispatch: # (manually)
 
 jobs:
@@ -16,12 +20,6 @@ jobs:
         uses: addnab/docker-run-action@v3
         with:
           image: johannesflake/oscar
-          options: -v ${{ github.workspace }}:/home/oscar/work
-          run: |
-            echo Hello, world!
-            julia -v
-            cd work
-            pwd
-            ls
-            julia tests.jl
+          options: -v ${{ github.workspace }}:/home/oscar/work -w /home/oscar/work
+          run: julia tests.jl
 
