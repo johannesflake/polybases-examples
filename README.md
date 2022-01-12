@@ -1,5 +1,7 @@
 # polybases-examples
 
+![tests](https://github.com/johannesflake/polybases-examples/actions/workflows/test.yml/badge.svg)
+
 
 ## Set-up
 
