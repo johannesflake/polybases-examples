@@ -7,19 +7,20 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    container:
-      image: johannesflake/oscar
-      options: --user root
       
     steps:
       - name: checkout
         uses: actions/checkout@v2
-        
-      - name: do test
-        run: |
-          echo Hello, world!
-          julia -v
-          pwd
-          ls
-          su -c "julia tests.jl" -m oscar
       
+      - name: test
+        uses: addnab/docker-run-action@v3
+        with:
+          image: johannesflake/oscar
+          options: -v ${{ github.workspace }}:/home/oscar/
+          run: |
+            echo Hello, world!
+            julia -v
+            pwd
+            ls
+            julia tests.jl
+
