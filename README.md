@@ -3,31 +3,13 @@
 ![tests](https://github.com/johannesflake/polybases-examples/actions/workflows/test.yml/badge.svg)
 
 
-## Set-up
+## Set-up, Usage
 
-In a terminal with `git` available:
-```
-git clone https://github.com/johannesflake/polybases-examples.git
-```
-will create a directory `polybases-examples` containing the examples.
+https://gitlab.com/johannesflake/polybases.jl
 
-## Usage
+## Docs
 
-In a terminal with both `git` and `docker` available:
-```
-cd polybases-examples
-git pull
-./run.sh
-```
-should update the files and start a Jupyter Notebook Server. Click on the links and open the example.
-
-## Specify the port
-
-If you want to run the Notebook Server on a specific port, say, because you want to use a computing server via `ssh`, the last command can be modified like this:
-```
-./run.sh 8788
-```
-
+https://johannesflake.gitlab.io/polybases.jl/
 
 
 
